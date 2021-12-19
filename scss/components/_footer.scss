@@ -11,6 +11,7 @@
 .footer-adress{
         h2 {
           margin-bottom: 20px;
+          text-align: left;
         }
         address ul li{
           &:not(:nth-last-child(1)) {
