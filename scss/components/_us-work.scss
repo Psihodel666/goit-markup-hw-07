@@ -4,18 +4,17 @@
     padding-bottom: 94px;
     ul {
       display: flex;
-      li {
-        width: 270px;
-        
-        &+li{
-          margin-left: 30px;
-        }
-      }
-      
     }
-    .us-work-txt-conteiner {
+  }
+  .us-work__item {
+    width: 270px;
+    & + &{
+      margin-left: 30px;
+    }
+  }  
+.us-work__txt-conteiner {
       padding-top: 30px;
-      h3 {
+   h3 {
         color: var(--two-text-color);
         font-weight: bold;
         font-size: 14px;
@@ -23,7 +22,7 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
       }
-      p {
+  p {
         font-size: 14px;
         line-height: 1.71;
         letter-spacing: 0.03em;
@@ -31,46 +30,32 @@
         margin-top: 10px;
       }
     }
-    .us-work-icon {
+ .us-work__icon {
       height: 120px;
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: #f5f4fa;
     }
-  }
+  
  
-  .us-work-img {
+.us-work-img {
     background-color: #fff;
     padding-bottom: 94px;
     ul {
       display: flex;
       margin-top: 50px;
-      li {
+    }
+  }
+
+.us-work-img__item {
         position: relative;
-        & + li{
+        & + &{
           margin-left: 30px;
         }
-        .us-work-txt-card {
-          position: absolute;
-          bottom: 0;
-          background-color: rgba(47, 48, 58, 0.8);
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          padding-top: 27px;
-          padding-bottom: 27px;
-          p {
-            color: #fff;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.17;
-          }
-        }
+    
         
       }
-    }
     img {
       display: block;
       max-width: 100%;
@@ -84,4 +69,20 @@
       color: var(--two-text-color);
       text-align: center;
     }
-  }
+    .us-work-img__txt-card {
+      position: absolute;
+      bottom: 0;
+      background-color: rgba(47, 48, 58, 0.8);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      p {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.17;
+      }
+    }

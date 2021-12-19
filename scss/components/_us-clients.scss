@@ -7,11 +7,13 @@
       font-size: 36px;
       text-align: center;
     }
-    .us-clients-container {
+  }
+.us-clients__container {
       display: flex;
       justify-content: space-between;
       margin-top: 50px;
-      li {
+    }
+.us-clients__card {
         width: 170px;
         height: 92px;
         a {
@@ -34,11 +36,12 @@
           outline: none;
         }
         }
+        svg {
+          fill: #afb1b8;
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
       }
-      svg {
-        fill: #afb1b8;
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      }
-    }
-  }
+      
+    
+  
  
